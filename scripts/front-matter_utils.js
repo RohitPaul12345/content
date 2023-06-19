@@ -29,7 +29,7 @@ export async function checkFrontMatter(filePath, options) {
   const fmObject = document.data;
   const order = options.config["attribute-order"];
 
-  // validate and collect errors
+  // Validate and collect errors
   const validator = options.validator;
   const valid = validator(fmObject);
   const validationErrors = betterAjvErrors({
